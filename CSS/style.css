@@ -145,3 +145,198 @@ img {
   height: 40px;
   fill: var(--sdbr-svg-fill);
 }
+
+header {
+  padding: 1em;
+  display: grid;
+  gap: 20px 2px;
+  grid-template-columns: 4fr 2fr;
+  border-bottom: 3px solid rgb(211, 210, 210);
+}
+
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; 
+}
+
+.search svg {
+    max-width: 25px;
+    fill: var(--main-svg-fill); 
+    cursor: pointer;
+}
+
+
+.search input {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-clr-sec);
+  color: var(--text-body);
+}
+
+.search > input::placeholder {
+    visibility: hidden;
+}
+
+.search > input:focus::placeholder {
+     visibility: visible;
+}
+
+.status {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 2rem;    
+   font-weight: bold;
+}
+
+
+.status svg {
+  max-width: 25px;
+  fill: var(--main-svg-fill, #555);
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+
+.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+}
+
+.avatar-small {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--accent-orange);
+}
+
+.avatar-big {
+  width: 75px;
+  height: 75px;
+  border: 3px solid var(--accent-orange);
+}
+
+.username {
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--txt-clr);
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;        
+  font-weight: bold;
+  margin-top: 0.5rem; 
+}
+
+.welcome > div > p:first-child {
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.welcome > div > p:last-child {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.header-btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;           
+  margin-top: 0.5rem;  
+}
+
+.header-btns > button{
+    background-color: var(--sdbr-bg-clr);
+    color: var(--btn-txt-clr);
+    border: none;
+    outline: none;
+    padding: 0.75em 2em;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.header-btns > button:hover {
+  background-color: var(--sdbr-hover);
+  color: var(--btn-txt-clr);
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 2rem;
+  padding: 1.5rem;
+  background-color: var(--Section-bg);
+  align-items: start;
+}
+
+.projects__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.projects__cards > .card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+}
+
+section > h2 {
+  font-size: 1em;
+  margin-top: 0;
+  color: var(--txt-clr);
+  border-radius: var(--border-radius);
+}
+
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: var(--bg-clr-prm);
+  border-radius: var(--border-radius);
+  border-left: 5px solid var(--card-lft-brdr);
+  padding:  1rem;
+}
+
+.card__title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.card__description {
+  color: var(--text-body);
+  margin: 0;
+}
+
+.card__actions {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 0.5rem;
+  justify-content: end;
+}
+
+.card__button {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+.card__button > svg {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  fill: var(--main-svg-fill);
+}
