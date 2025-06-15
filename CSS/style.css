@@ -340,3 +340,76 @@ section > h2 {
   cursor: pointer;
   fill: var(--main-svg-fill);
 }
+
+.announcements,
+.trending {
+  padding: 1em 1em 1em 0.1em;
+}
+
+.announcements > ul,
+.trending > ul {
+  background-color: var(--bg-clr-prm);
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border-bottom: 5px solid var(--accent-orange);
+}
+
+
+.announcements > ul > li {
+  padding: 0.4em;
+}
+
+.announcements > ul > li > h4 {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+.announcements > ul > li > p {
+  font-size: 0.6em;
+  color: var(--text-body);
+  opacity: 11;
+  margin: 0.5em;
+}
+
+.announcements > ul > li + li {
+  border-top: 1px solid var(--txt-clr);
+}
+
+.trending {
+  grid-column: 2;
+  margin-top: 0;
+}
+
+.trending > ul > li + li {
+  margin-top: 1.5em;
+}
+
+.trending > ul > li {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.trending > ul > li > img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.trending > ul > li > div > * {
+  margin: 0;
+}
+
+.trending > ul > li > div > p:first-child {
+  font-weight: 500;
+}
+
+.trending > ul > li > div > p:nth-child(2) {
+  font-size: 0.8rem;
+  opacity: 11;
+  color: var(--text-body);
+}
+
+
