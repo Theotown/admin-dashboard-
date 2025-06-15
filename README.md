@@ -24,11 +24,10 @@ admin-Dashboard/
 ├── index.html         # Main HTML file
 └── README.md          # Project documentation
 
-
 ## 🧑‍💻 Getting Started
 1. 
 
-git clone https://github.com/Theotown/admin-Dashboard.git
+git clone https://github.com/Theotown/admin-dashboard-.git
 
 2. cd admin-Dashboard
 
