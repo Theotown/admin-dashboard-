@@ -1,0 +1,50 @@
+:root {
+
+  --primary-color: #3b82f6;      
+  --accent-orange: #ea6a3e;          
+  --Section-bg: #3e718d;         
+  
+
+  --primary-bg: #fef9f4;            
+  --bg-clr-prm: var(--primary-bg); 
+  --bg-clr-sec: #d9e6f2;           
+  --card-bg: #ffffff;              
+  --card-border: #e2e8f0;          
+  --card-shadow: rgba(0, 0, 0, 0.04);
+
+
+  --sdbr-bg-clr: #102a43;           
+  --sdbr-hover: #334155;          
+  --sdbr-svg-fill: #94a3b8;
+  --sdbr-txt-clr: #f1f5f9;
+
+
+  --txt-clr: #1a1a1a;               
+  --text-body: #616161;             
+  --text-muted: #888888;            
+
+
+  --btn-bg-clr: var(--primary-color);
+  --btn-hover: var(--primary-hover);
+  --btn-txt-clr: #ffffff;
+
+
+  --avatar-bg: #f4a261;
+
+
+  --main-svg-fill: #0f172a;
+
+
+  --border-radius: 0.75rem;
+
+  
+  --card-lft-brdr: var(--accent-orange);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
